@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Script to Add the Centos Docker Repo, Install Docker and Docker-Compose, and enable/start the Docker service.
+# The user will have to run the `usermod -aG docker $USER` by themselves, it won't work for some reason.
+
 dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 dnf update -y --allowerasing --nobest
 dnf upgrade -y --allowerasing --nobest
