@@ -18,5 +18,5 @@ systemctl start docker
 
 echo ""
 echo "----------------"
-printf "Almost done! Run the following:\n  usermod -aG docker $USER\nThen re-log in to start using Docker and Docker-Compose.\n"
+printf "Almost done! Run the following:\n  usermod -aG docker \$USER\nThen re-log in to start using Docker and Docker-Compose.\n"
 echo "----------------"
